@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  :root{
+    --fuentePrincipal: 'Rubik', sans-serif;
+    /* ## Colors */
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+  
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 18px;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor{
+    max-width: 375px;
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor{
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+}
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+img{
+    max-width: 100%;
+}
+
+/* Header Component */
+.header{
+  background-image: url(./images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 35rem;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Buscador Component */
+.hacia-arriba{
+  /* position: absolute;
+  top: 10%;
+  left: 15%; */
+  margin-top: -25rem;
+  z-index: 9;
+}
+
+/* Resultado Component */
+.span-resultado{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--DarkGray);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.p-resultado{
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .p-resultado{
+    font-size: 28px;
+  
+  }
+}
+.mas-arriba{
+  margin-top: 3rem;
+  z-index: 10;
+}
+
+/* Mapa Component */
+.mapa{
+  position: absolute;
+  z-index: -1;
+  top: 30%;
+  width: 100%;
+  height: 100%;
+}
