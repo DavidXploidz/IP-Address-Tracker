@@ -6,9 +6,8 @@ import { Popup } from 'react-leaflet'
 import useTracker from '../hooks/useTracker'
 const Mapa = () => {
 
-    const {location, mostrar, consultarAPI} = useTracker()
+    const {location, mostrar} = useTracker()
     const {lat, lng, city, postalCode} = location
-
 
   return (
     <>
@@ -28,7 +27,6 @@ const Mapa = () => {
         </MapContainer>
         </div>
     )}
-   
     </>
   )
 }

@@ -30,11 +30,6 @@ import { useState, useEffect } from "react";
 		  	consultarAPI()
 		}, [])
 		
-
-
-	
-	
-
     	return(
        	 <TrackerContext.Provider 
             	value={{
@@ -56,8 +51,6 @@ import { useState, useEffect } from "react";
         	</TrackerContext.Provider>
    	 )
 	}
-
-
 
 	export {
     	TrackerProvider
